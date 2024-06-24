@@ -1,6 +1,11 @@
 button {
-  width: 25px;
-  height: 25px;
+  display: inline;
+  width: 33px;
+  height: 33px;
   margin: 0;
   border-radius: 1;
+}
+board-row {
+  display: inline-block;
+  margin: 0;
 }
