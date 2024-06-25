@@ -1,7 +1,16 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
 .one {
     background-color: aliceblue;
 }
+.reactive-nonmetals-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 
+}
 .reactive-nonmetals {
     display: flex;
     justify-content: left;

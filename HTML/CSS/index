@@ -8,7 +8,7 @@
     </head>
     <body>
         <section class="one">
-            <ul>
+            <ul class="reactive-nonmetals-list">
                 <li class="reactive-nonmetals">Hydrogen</li>
                 <li class="reactive-nonmetals">Helium</li>
                 <li class="reactive-nonmetals">Lithium</li>
