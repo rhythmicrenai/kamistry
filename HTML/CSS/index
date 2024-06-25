@@ -8,9 +8,12 @@
     </head>
     <body>
         <section class="one">
-            <div>
-                <button class="reactive-nonmetals">Hydrogen</button>
-            </div>
+            <ul>
+                <li class="reactive-nonmetals">Hydrogen</li>
+                <li class="reactive-nonmetals">Helium</li>
+                <li class="reactive-nonmetals">Lithium</li>
+                <li class="reactive-nonmetals">Beryllium</li>
+            </ul>
         </section>
         
     </body>

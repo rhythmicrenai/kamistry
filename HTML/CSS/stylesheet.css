@@ -3,11 +3,14 @@
 }
 
 .reactive-nonmetals {
+    display: flex;
+    justify-content: left;
     background-color: lightblue;
     color: blue;
     border: 4px solid blue;
     border-radius: 10px;
     padding: 15px;
+    margin: 10px;
 }
 .reactive-nonmetals::hover {
     background-color: darkblue;
