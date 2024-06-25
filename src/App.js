@@ -1,22 +1,29 @@
  import { useState, useEffect } from 'react';
 
- const element = {
-  name: 'hydrogen',
-  symbol: 'H',
-  atomicNumber: '1'
- }
+ const ELEMENTS = [
+  {name: 'hydrogen', symbol: 'H', atomicNumber: '1'},
+  {name: 'helium', symbol: 'He', atomicNumber: '2'}
+]
+
+function btn({ val, onBtnClick }) {
+  return (
+    <button className="btn" onClick={onBtnClick}>
+      {val}
+    </button>
+  );
+};
 
  function Element() {
   const [isSymbol, setIsSymbol] = useState(true);
-  const [value, setValue] = useState(element.symbol);
+  const [value, setValue] = useState(ELEMENTS[0].symbol);
   
-  function handleClick() {
+  function handleClick(elNum) {
     var nextText = value.slice();
 
     if (isSymbol) {
-      nextText = element.name;
+      nextText = ELEMENTS[elNum].name;
     } else {
-      nextText = element.symbol;
+      nextText = ELEMENTS[elNum].symbol;
     }
 
     setValue(nextText);
@@ -25,8 +32,8 @@
 
   return (
     <button 
-      className="button-element"
-      onClick={handleClick}
+      className='reactive-nonmetals ${isSymbol ? "button-symbol" : "button-name"}'
+      onClick={() => handleClick(0)}
     >
       {value}
     </button>
@@ -34,10 +41,15 @@
  }
 
  export default function Kamistry() {
+
+  function handleClick(i) {
+
+  }
+
   return (
     <>
       <div className="element-row">
-        <Element />
+        <Element tableNum="0" onBtnClick={() => handleClick}/>
       </div>
     </>
   );

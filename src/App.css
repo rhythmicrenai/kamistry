@@ -1,6 +1,20 @@
-.button-element {
-  width: 100px;
-  height: 100px;
+* {
+  background-color: lightgoldenrodyellow;
+}
+.reactive-nonmetals {
+  /* background-color: lightblue; */
+  font-size: 36pt;
+  padding: 25px;
+  border: 4px solid #1017e6;
+  border-radius: 15px;
+}
+.button-name {
+  background-color: darkblue;
+  color: darkblue;
+}
+.button-symbol {
+  min-width: 100px;
+  min-height: 100px;
 }
 div {
   width: 100px;
