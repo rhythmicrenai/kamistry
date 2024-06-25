@@ -7,22 +7,28 @@
  }
 
  function Element() {
-  const [thing, setThing] = useState(element.symbol);
-
-  function Toggle(thing) {
-    if (thing = element.symbol) {
-       return setThing(element.name);
-    } else {
-      return setThing(element.name);
-    }
-  }
+  const [isSymbol, setIsSymbol] = useState(true);
+  const [value, setValue] = useState(element.symbol);
   
+  function handleClick() {
+    var nextText = value.slice();
+
+    if (isSymbol) {
+      nextText = element.name;
+    } else {
+      nextText = element.symbol;
+    }
+
+    setValue(nextText);
+    setIsSymbol(!isSymbol);
+  };
+
   return (
     <button 
-      className="element-button"
-      onClick={() => Toggle(thing)}
+      className="button-element"
+      onClick={handleClick}
     >
-      {thing}
+      {value}
     </button>
   );
  }
